@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gaia Yin Yoga — Yin Yoga Classes in Rugby</title>
+  <link rel="icon" href="https://github.com/github-copilot/chat/attachments/cfffa274-799e-49a8-891e-744b3733fafc" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Gaia Yin Yoga home">
+        <img class="brand-logo" src="https://github.com/github-copilot/chat/attachments/c0cb2ddf-b313-4b62-b779-2669b5e9b5f9" alt="Gaia Yin Yoga logo">
+        <div class="brand-text">
+          <h1>Gaia</h1>
+          <p>Yin Yoga — Rugby</p>
+        </div>
+      </a>
+
+      <button id="nav-toggle" aria-expanded="false" aria-controls="main-nav" class="nav-toggle">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+        <span class="sr-only">Toggle navigation</span>
+      </button>
+
+      <nav id="main-nav" class="main-nav" role="navigation" aria-label="Primary">
+        <a href="#welcome">Home</a>
+        <a href="#why-yin">Why Yin Yoga</a>
+        <a href="#teacher">Your Teacher</a>
+        <a href="#register" class="cta">Register for Classes</a>
+        <a href="#about-yin">About Yin Yoga</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO / COMING SOON -->
+    <section id="welcome" class="hero" aria-labelledby="welcome-heading">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h2 id="welcome-heading">Yin Yoga Classes in Rugby — Coming Soon</h2>
+          <p class="lead">Explore the calming power of regular Yin Yoga practice. Looking for a way to unwind and de-stress? Discover the profound benefits of yin yoga — the perfect antidote to a busy lifestyle.</p>
+
+          <p class="hero-ctas">
+            <a href="#register" class="btn primary">Register Your Interest</a>
+            <a href="#why-yin" class="btn ghost">Why Yin Yoga</a>
+          </p>
+
+          <p class="intro-note">Perfect for all levels — supportive, slow-paced classes designed to help you relax, recharge and reconnect with yourself.</p>
+        </div>
+
+        <figure class="hero-image">
+          <img src="https://github.com/github-copilot/chat/attachments/67f7f6b1-6e4b-4b97-bcc0-77101a1ef063" alt="Person practicing yin Seal pose on a mat in a bright room">
+          <figcaption class="sr-only">Image showing Seal yin yoga pose</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- WHY YIN YOGA -->
+    <section id="why-yin" class="section content" aria-labelledby="why-heading">
+      <div class="container">
+        <h3 id="why-heading">Why Yin Yoga</h3>
+        <p>Looking for a relaxing yoga class in Rugby? These yin yoga sessions help you find inner peace and improve wellbeing by focusing on deep stretches that soothe body and mind.</p>
+
+        <h4>Yin yoga is an ideal way to:</h4>
+        <ul class="benefits-list">
+          <li><strong>Melt away stress:</strong> Unwind and release tension through gentle, long-held poses.</li>
+          <li><strong>Enhance flexibility:</strong> Improve joint mobility and range of motion — excellent for recovery from exercise.</li>
+          <li><strong>Release emotions:</strong> Experience opportunities for emotional release and self-awareness.</li>
+        </ul>
+
+        <p>These classes provide a supportive environment to help you relax, recharge, and reconnect with yourself.</p>
+
+        <div class="images-grid">
+          <figure>
+            <img src="https://github.com/github-copilot/chat/attachments/d96a735d-4c6a-4f91-9133-ccdfe62fde6f" alt="Group doing yin puppy pose">
+            <figcaption class="sr-only">Image showing yin students in puppy pose</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- YOUR TEACHER -->
+    <section id="teacher" class="section teacher" aria-labelledby="teacher-heading">
+      <div class="container">
+        <h3 id="teacher-heading">Your Teacher</h3>
+        <p>My name is Rachel — I’m a Yin Yoga teacher, newly qualified in June 2025. I’ve been practising yin yoga for 5 years and it has helped me to recover from chronic illness.</p>
+
+        <p>Practising yin yoga has helped me to take time for myself to calm my nervous system and rebalance. I am an active person who enjoys walking, cycling, running, swimming, hatha/vinyasa yoga and pilates. I used to be on the go all of the time and found it difficult to switch off when it was time to sleep.</p>
+
+        <p>I have learnt to balance activities with periods of rest and recovery. Yin yoga forms part of my daily practice alongside meditation and breathwork.</p>
+      </div>
+    </section>
+
+    <!-- REGISTER FOR CLASSES -->
+    <section id="register" class="section register" aria-labelledby="register-heading">
+      <div class="container">
+        <h3 id="register-heading">Register for Classes — Sign up to be notified</h3>
+        <p>Sign up to my email list to be notified when classes are available in Rugby, Warwickshire.</p>
+
+        <form id="interest-form" class="interest-form" novalidate>
+          <div class="form-row">
+            <label for="name">Name <span class="req"> (required)</span>
+              <input id="name" name="name" type="text" required placeholder="Your name">
+            </label>
+            <div class="warning" id="warning-name" aria-live="polite"></div>
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email <span class="req"> (required)</span>
+              <input id="email" name="email" type="email" required placeholder="you@example.com">
+            </label>
+            <div class="warning" id="warning-email" aria-live="polite"></div>
+          </div>
+
+          <div class="form-row">
+            <label for="phone">Phone
+              <input id="phone" name="phone" type="tel" placeholder="Optional">
+            </label>
+            <div class="warning" id="warning-phone" aria-live="polite"></div>
+          </div>
+
+          <div class="form-row">
+            <label for="how">How did you hear about us?
+              <input id="how" name="how" type="text" placeholder="E.g. Instagram, friend, search">
+            </label>
+            <div class="warning" id="warning-how" aria-live="polite"></div>
+          </div>
+
+          <div class="form-row">
+            <label for="other">Other details
+              <textarea id="other" name="other" rows="3" placeholder="Any notes we should know (accessibility, preferences)"></textarea>
+            </label>
+            <div class="warning" id="warning-other" aria-live="polite"></div>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn primary">Send</button>
+            <button type="reset" class="btn ghost">Reset</button>
+          </div>
+
+          <p class="form-note muted">We will only use your details to contact you about classes. Your data will not be shared.</p>
+        </form>
+      </div>
+    </section>
+
+    <!-- ABOUT YIN YOGA (DETAILED) -->
+    <section id="about-yin" class="section about-yin" aria-labelledby="about-yin-heading">
+      <div class="container">
+        <h3 id="about-yin-heading">About Yin Yoga</h3>
+
+        <p>Yin yoga is a meditative, slow-paced style of yoga that focuses on holding postures for several minutes to target the body’s deep connective tissues, most notably fascia.</p>
+
+        <h4>Finding Your Edge in Yin Yoga</h4>
+        <p>During yin yoga, yogis find their “edge”, the point in a pose where a significant stretch is felt without any sharp pain. This is the ideal spot to hold a posture for an extended period, typically three to five minutes, allowing the body to relax into the stretch.</p>
+
+        <div class="images-grid two">
+          <figure>
+            <img src="https://github.com/github-copilot/chat/attachments/67f7f6b1-6e4b-4b97-bcc0-77101a1ef063" alt="Seal pose">
+            <figcaption class="sr-only">Image showing Seal yin yoga pose</figcaption>
+          </figure>
+          <figure>
+            <img src="https://github.com/github-copilot/chat/attachments/d96a735d-4c6a-4f91-9133-ccdfe62fde6f" alt="Puppy pose">
+            <figcaption class="sr-only">Image showing yin students in puppy pose</figcaption>
+          </figure>
+        </div>
+
+        <h4>The Physical and Energetic Benefits of Yin Yoga</h4>
+        <p>Unlike dynamic exercises that focus on muscular engagement, yin yoga applies gentle, sustained stress to the body’s deep connective tissues, particularly fascia. This process helps improve flexibility and increase joint mobility. By targeting the fascia, yin yoga serves as a powerful complement to more active workouts. It nurtures the body’s deep structural network, helping to balance the intensity of other exercises and preventing stiffness and injury.</p>
+
+        <h4>Energy and Charge in the Body</h4>
+        <p>Fascia is a web of fibrous connective tissue that surrounds every muscle, bone, organ, and nerve in your body. It not only provides structural support but also plays a crucial role in communication. Recent research suggests that fascia acts as an information highway, transmitting electrical signals and cellular messages. By applying gentle pressure and stretching through yin yoga, you can release fascial tension and optimise this communication network, which may improve cellular function and promote overall wellbeing.</p>
+
+        <h4>Traditional Chinese Medicine and Yin Yoga</h4>
+        <p>The principles of Traditional Chinese Medicine (TCM) offer a powerful lens through which to understand the benefits of yin yoga. In TCM, the body’s vital energy, or Qi, flows through channels called meridians. Fascia, with its web-like structure and electrical properties, is thought to be the physical medium for these meridians. Long-held yin postures are designed to stimulate specific meridian lines linked to organs. By nourishing the fascial network, yin yoga can help to unblock stagnant Qi, restore its proper flow, and bring the body’s systems into balance.</p>
+
+        <h4>Living in Harmony with our Natural Energy Cycles</h4>
+        <p>Yin yoga supports natural biological cycles, including ultradian rhythms — roughly 90–120 minute cycles of activity and rest. When we push through the natural energy dips we disrupt these rhythms, leading to stress and fatigue. Yin helps honour these cycles by encouraging a restorative state, activating the parasympathetic nervous system and supporting cellular repair and energy replenishment.</p>
+
+        <h4>The Difference between Yin and Restorative Yoga</h4>
+        <p>Restorative yoga focuses on complete relaxation and uses props to fully support the body so you can rest without stretching. Yin yoga uses props to help you find your “edge” and apply a gentle, sustained stress to connective tissues.</p>
+      </div>
+    </section>
+
+    <!-- FOOTER / COPYRIGHT -->
+    <footer class="site-footer" role="contentinfo">
+      <div class="container footer-inner">
+        <div class="footer-left">
+          <small>Copyright © 2025 Gaia Yin Yoga</small>
+        </div>
+        <div class="footer-right">
+          <nav class="footer-nav" aria-label="Footer links">
+            <a href="#top">Home</a>
+            <a href="#about-yin">About Yin Yoga</a>
+            <a href="#register">Register</a>
+          </nav>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    // Mobile nav toggle
+    (function(){
+      const navToggle = document.getElementById('nav-toggle');
+      const mainNav = document.getElementById('main-nav');
+      navToggle.addEventListener('click', () => {
+        const expanded = navToggle.getAttribute('aria-expanded') === 'true';
+        navToggle.setAttribute('aria-expanded', String(!expanded));
+        mainNav.classList.toggle('open');
+      });
+
+      // Simple client-side validation to show warnings (demo)
+      const form = document.getElementById('interest-form');
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        let ok = true;
+        const name = document.getElementById('name');
+        const email = document.getElementById('email');
+
+        document.getElementById('warning-name').textContent = '';
+        document.getElementById('warning-email').textContent = '';
+
+        if (!name.value.trim()) {
+          document.getElementById('warning-name').textContent = 'Warning: Name is required';
+          ok = false;
+        }
+        if (!email.value.trim() || !/^\S+@\S+\.\S+$/.test(email.value)) {
+          document.getElementById('warning-email').textContent = 'Warning: A valid email is required';
+          ok = false;
+        }
+
+        if (!ok) {
+          // focus first invalid
+          const firstInvalid = form.querySelector('.warning:not(:empty)');
+          if (firstInvalid) firstInvalid.previousElementSibling.querySelector('input,textarea').focus();
+          return;
+        }
+
+        // Demo behaviour: show a simple success message (replace with real submission)
+        alert('Thanks — your interest has been registered. We will contact you when classes are available.');
+        form.reset();
+      });
+    })();
+  </script>
+</body>
+</html>
