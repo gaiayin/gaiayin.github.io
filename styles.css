@@ -34,7 +34,7 @@ body{
 
 /* header */
 .site-header{
-  background:transparent;
+  background:#ffffff; /* NAV BAR WHITE BACKGROUND */
   position:sticky;
   top:0;
   z-index:60;
@@ -58,8 +58,9 @@ body{
   color:inherit;
 }
 .brand-logo{
-  width:56px;
-  height:56px;
+  /* 1) make logo 50% larger while preserving proportions */
+  height:84px;      /* 56px * 1.5 */
+  width:auto;
   object-fit:contain;
   border-radius:10px;
   background:white;
@@ -111,6 +112,10 @@ body{
   transition:max-height .25s ease;
   overflow:hidden;
   max-height:0;
+  background:#ffffff; /* ensure nav background is white when expanded on mobile */
+  padding:0.6rem 0.25rem;
+  border-radius:10px;
+  box-shadow:0 6px 18px rgba(75,43,91,0.03);
 }
 .main-nav.open{max-height:360px}
 .main-nav a{
@@ -183,6 +188,20 @@ body{
 .section{ padding:1.25rem 0; background:transparent; }
 .section h3{ margin:0 0 1rem 0; font-family:"Merriweather",serif; color:var(--primary); font-size:1.15rem; }
 
+/* 2) Section shading classes so backgrounds correspond to relevant content areas */
+.section--light {
+  background: linear-gradient(180deg, #ffffff 0%, #fbfbfd 100%);
+  color: #111;
+}
+.section--muted {
+  background: linear-gradient(180deg, #f7f8fa 0%, #eef1f6 100%);
+  color: #222;
+}
+.section--accent {
+  background: linear-gradient(180deg, #fffaf6 0%, #fff3ea 100%);
+  color: #222;
+}
+
 /* content */
 .content p{ color:#222; margin:0 0 1rem 0; }
 .benefits-list{ padding-left:1rem; color:var(--muted); margin:0 0 1rem 0; }
@@ -193,8 +212,18 @@ body{
 .images-grid.two{ grid-template-columns:1fr 1fr; gap:0.6rem; }
 .images-grid img{ width:100%; height:auto; border-radius:10px; object-fit:cover; box-shadow:0 8px 24px rgba(75,43,91,0.06) }
 
-/* teacher */
+/* teacher photo */
 .teacher p{ margin:0 0 0.9rem 0; color:var(--muted) }
+.teacher .teacher-photo{
+  width:160px;
+  height:160px;
+  border-radius:50%;
+  object-fit:cover;
+  display:block;
+  margin:12px 0 18px;
+  border:3px solid rgba(255,255,255,0.9);
+  box-shadow:0 6px 18px rgba(0,0,0,0.08);
+}
 
 /* register form */
 .register .interest-form{ background:var(--card); padding:1rem; border-radius:12px; box-shadow:0 8px 24px rgba(75,43,91,0.04) }
@@ -216,13 +245,32 @@ body{
 .about-yin p{ color:var(--muted); margin-bottom:0.9rem; }
 
 /* footer */
+/* 3) Footer nav styled to match main navigation appearance */
 .site-footer{ padding:1rem 0; border-top:1px solid rgba(75,43,91,0.05); background:transparent; }
 .footer-inner{ display:flex; justify-content:space-between; gap:1rem; align-items:center; flex-wrap:wrap; }
-.footer-nav a{ color:var(--muted); text-decoration:none; margin-left:0.65rem; font-size:0.95rem; }
+.footer-nav {
+  display:flex;
+  gap:0.6rem;
+  align-items:center;
+  flex-wrap:wrap;
+}
+.footer-nav a{
+  color:var(--primary);
+  text-decoration:none;
+  padding:0.3rem 0.5rem;
+  font-weight:600;
+  border-radius:8px;
+}
+.footer-nav a.cta{
+  background:var(--primary);
+  color:white;
+  padding:0.45rem 0.65rem;
+  box-shadow:0 6px 18px rgba(75,43,91,0.12);
+}
 
 /* responsive adjustments (desktop) */
 @media (min-width:720px){
-  .main-nav{ max-height:none; flex-direction:row; align-items:center; gap:0.75rem; overflow:visible; }
+  .main-nav{ max-height:none; flex-direction:row; align-items:center; gap:0.75rem; overflow:visible; background:transparent; padding:0; box-shadow:none; }
   .nav-toggle{ display:none; }
 
   .hero-grid{ grid-template-columns:1fr 420px; gap:2rem; align-items:center; }
@@ -235,5 +283,5 @@ body{
 /* wide */
 @media (min-width:1100px){
   .hero-copy h2{ font-size:2rem; }
-  .brand-logo{ width:68px; height:68px; }
+  .brand-logo{ height:102px; } /* 68px * 1.5 for wide screens */
 }
